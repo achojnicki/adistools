@@ -1,0 +1,10 @@
+server {
+	listen 80;
+	
+	server_name api;
+	
+	location / {
+		uwsgi_pass 127.0.0.1:9999;
+		include uwsgi_params;
+	}
+}

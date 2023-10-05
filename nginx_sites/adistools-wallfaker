@@ -1,0 +1,10 @@
+server {
+	listen 80;
+	
+	server_name wallfaker;
+	
+	location / {
+		uwsgi_pass 127.0.0.1:10001;
+		include uwsgi_params;
+	}
+}
