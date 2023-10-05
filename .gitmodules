@@ -1,0 +1,12 @@
+[submodule "uwsgi_workers/adistools-api"]
+	path = uwsgi_workers/adistools-api
+	url = git@github.com:achojnicki/adistools-api.git
+[submodule "uwsgi_workers/adistools-url_shortener"]
+	path = uwsgi_workers/adistools-url_shortener
+	url = git@github.com:achojnicki/adistools-url_shortener.git
+[submodule "uwsgi_workers/adistools-wallfaker"]
+	path = uwsgi_workers/adistools-wallfaker
+	url = git@github.com:achojnicki/adistools-wallfaker.git
+[submodule "concurrent"]
+	path = concurrent
+	url = git@github.com:achojnicki/adistools-concurrent.git
