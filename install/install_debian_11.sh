@@ -71,8 +71,6 @@ systemctl enable mongod.service
 #starting mongodb
 servce mongod start
 
-
-
 #adding systemd service
 ln -s /opt/adistools/systemd/adistools.service /lib/systemd/system/
 
@@ -90,7 +88,7 @@ ln -s /opt/adistools/nginx_sites/adistools-api /etc/nginx/sites-enabled/
 ln -s /opt/adistools/nginx_sites/adistools-url_shortener /etc/nginx/sites-enabled/
 ln -s /opt/adistools/nginx_sites/adistools-wallfaker /etc/nginx/sites-enabled/
 
-#restarint nginx service
+#restaring nginx service
 service nginx restart
 
 

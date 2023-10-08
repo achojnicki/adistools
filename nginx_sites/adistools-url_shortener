@@ -1,7 +1,7 @@
 server {
 	listen 80;
 	
-	server_name url_shortener;
+	server_name adistools-url_shortener;
 	
 	location / {
 		uwsgi_pass 127.0.0.1:10000;
