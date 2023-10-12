@@ -4,7 +4,7 @@ server {
 	server_name adistools-url_shortener;
 	
 	location / {
-		uwsgi_pass 127.0.0.1:10000;
+		uwsgi_pass localhost:10000;
 		include uwsgi_params;
 	}
 }

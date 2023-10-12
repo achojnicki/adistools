@@ -10,3 +10,6 @@
 [submodule "concurrent"]
 	path = concurrent
 	url = git@github.com:achojnicki/adistools-concurrent.git
+[submodule "workers/adistools-log_worker"]
+	path = workers/adistools-log_worker
+	url = git@github.com:achojnicki/adistools-log_worker.git

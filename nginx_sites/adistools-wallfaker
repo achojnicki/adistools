@@ -4,7 +4,7 @@ server {
 	server_name adistools-wallfaker;
 	
 	location / {
-		uwsgi_pass 127.0.0.1:10001;
+		uwsgi_pass localhost:10001;
 		include uwsgi_params;
 	}
 }

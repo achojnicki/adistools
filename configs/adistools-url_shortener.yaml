@@ -3,3 +3,8 @@ mongo:
     port: 27017
     db: adistools
 
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: adistools-url_shortener
+    password: password

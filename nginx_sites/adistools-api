@@ -4,7 +4,7 @@ server {
 	server_name adistools-api;
 	
 	location / {
-		uwsgi_pass 127.0.0.1:9999;
+		uwsgi_pass localhost:9999;
 		include uwsgi_params;
 	}
 }

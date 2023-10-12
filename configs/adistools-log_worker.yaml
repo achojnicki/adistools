@@ -1,17 +1,10 @@
-api:
-    results_per_page: 20
-    
-log:
-    debug: True
-    
 mongo:
     host: localhost
     port: 27017
     db: adistools
-
+    
 rabbitmq:
     host: localhost
     port: 5672
-    user: adistools-api
+    user: adistools-log_worker
     password: password
-
