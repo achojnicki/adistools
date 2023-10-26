@@ -19,3 +19,6 @@ uwsgi:
 
 tasks:
     interval: 0.1
+
+modules:
+    modules_directory: /opt/adistools/modules

@@ -1,5 +1,5 @@
 api:
-    results_per_page: 20
+    results_per_page: 35
     
 log:
     debug: True
