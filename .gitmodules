@@ -13,3 +13,6 @@
 [submodule "workers/adistools-log_worker"]
 	path = workers/adistools-log_worker
 	url = git@github.com:achojnicki/adistools-log_worker.git
+[submodule "modules/log"]
+	path = modules/log
+	url = git@github.com:achojnicki/adistools-log.git
