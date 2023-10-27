@@ -1,18 +1,15 @@
 general:
     daemonize: false
-    workers_directory: /opt/adistools/workers
     start_workers: true
     start_uwsgi_workers: true
 
 log:
     debug: true
-    logs_directory: /opt/adistools/logs
 
 daemon:
     pid_file: /opt/adistools/adistools-concurrent.pid
 
 uwsgi:
-    ini_directory: /opt/adistools/uwsgi_inis
     uwsgi_executable_path: /opt/homebrew/bin/uwsgi
     uid: 7676
     gid: 7676
@@ -20,5 +17,8 @@ uwsgi:
 tasks:
     interval: 0.1
 
-modules:
+directories:
+    workers_directory: /opt/adistools/workers
+    logs_directory: /opt/adistools/logs
+    ini_directory: /opt/adistools/uwsgi_inis
     modules_directory: /opt/adistools/modules

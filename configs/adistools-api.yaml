@@ -15,3 +15,5 @@ rabbitmq:
     user: adistools-api
     password: password
 
+directories:
+    endpoints_directory: /opt/adistools/uwsgi_workers/adistools-api/Endpoints

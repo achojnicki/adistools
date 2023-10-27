@@ -1,3 +1,4 @@
+from .constants import LOG_LEVELS
 from .methods import adislog_methods 
 from .inspect import inspect
 from .process import get_process_details
@@ -13,20 +14,19 @@ import traceback
 class adistoolslog(adislog_methods):
     def __init__(self,
                  debug:bool=False,
-                 backends:list or array=['file_plain','terminal_table'],
-                 project_name:str="Unknown",
+                 backends:list or array=['rabbitmq_emitter'],
                  rabbitmq_host=None,
                  rabbitmq_port=None,
                  rabbitmq_user=None,
                  rabbitmq_passwd=None,
                  rabbitmq_queue='logs',
-                 **kwargs):
+                 root=None
+                 ):
         self._backends=[]
         self._time_format="%d/%m/%Y %H:%M:%S"
         self._debug=debug
-        self._project_name=project_name
         self._exception_data=[]
-        
+        self._root=root
         self._inspect=inspect()
         
         
@@ -51,8 +51,12 @@ class adistoolslog(adislog_methods):
             if o:
                 self._backends.append(o)
             
-            
-        
+    @property        
+    def _log_data(self):
+        if hasattr(self._root, 'session'):
+            return self._root.session.log_data
+        return {}
+
     def _message(self,log_level:int, log_item):
         if log_level >0 or self._debug: 
             if type(log_item) is str:
@@ -78,12 +82,13 @@ class adistoolslog(adislog_methods):
             process_details=get_process_details()
                             
             msg={
-            "project_name": self._inspect.caller.__name__,
-            "log_level":log_level,
+            "project_name": self._root.project_name,
+            "log_level":LOG_LEVELS[log_level],
             "message":message, 
             "datetime":time, 
             **caller_info, 
-            **process_details
+            **process_details,
+            **self._log_data
             }
 
             if self._exception_data:
