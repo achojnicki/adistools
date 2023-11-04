@@ -1,0 +1,10 @@
+server {
+	listen 80;
+	
+	server_name sicken-api;
+	
+	location / {
+		uwsgi_pass localhost:10002;
+		include uwsgi_params;
+	}
+}
