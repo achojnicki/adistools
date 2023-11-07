@@ -1,0 +1,17 @@
+worker_t5:
+    model: sicken
+    tokenizer: sicken
+
+log:
+    debug: true
+
+mongo:
+    host: localhost
+    port: 27017
+    db: sicken
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: sicken-worker_t5
+    password: password
