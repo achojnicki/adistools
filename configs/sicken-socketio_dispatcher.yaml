@@ -1,0 +1,12 @@
+log:
+    debug: true
+    
+socketio:
+    host: "0.0.0.0"
+    port: 10003
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: sicken-socketio_dispatcher
+    password: password
