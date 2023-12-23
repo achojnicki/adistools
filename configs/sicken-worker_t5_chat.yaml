@@ -1,3 +1,7 @@
+worker_t5:
+    model: sicken
+    tokenizer: sicken
+
 log:
     debug: true
 
@@ -9,5 +13,5 @@ mongo:
 rabbitmq:
     host: localhost
     port: 5672
-    user: sicken-worker_llama2
+    user: sicken-worker_t5_chat
     password: password

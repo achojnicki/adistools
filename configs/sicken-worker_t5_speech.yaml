@@ -13,5 +13,5 @@ mongo:
 rabbitmq:
     host: localhost
     port: 5672
-    user: sicken-worker_t5
+    user: sicken-worker_t5_speech
     password: password

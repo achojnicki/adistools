@@ -7,13 +7,13 @@ log:
 mongo:
     host: localhost
     port: 27017
-    db: adistools
+    db: scarlet
 
 rabbitmq:
     host: localhost
     port: 5672
-    user: adistools-api
+    user: scarlet-api
     password: password
 
 directories:
-    endpoints_directory: /opt/adistools/uwsgi_workers/adistools-api/endpoints
+    endpoints_directory: /opt/adistools/uwsgi_workers/scarlet-api/endpoints

@@ -1,10 +1,10 @@
 server {
 	listen 80;
 	
-	server_name api.adistools.local;
+	server_name api.scarlet.local;
 	
 	location / {
-		uwsgi_pass localhost:9999;
+		uwsgi_pass localhost:10004;
 		include uwsgi_params;
 	}
 }

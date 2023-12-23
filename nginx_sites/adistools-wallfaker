@@ -1,7 +1,7 @@
 server {
 	listen 80;
 	
-	server_name adistools-wallfaker;
+	server_name wallfaker.adistools.local;
 	
 	location / {
 		uwsgi_pass localhost:10001;
