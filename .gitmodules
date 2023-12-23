@@ -37,3 +37,6 @@
 [submodule "workers/sicken-speech_synth"]
 	path = workers/sicken-speech_synth
 	url = git@github.com:achojnicki/sicken-speech_synth.git
+[submodule "workers/sicken-vtube_plugin"]
+	path = workers/sicken-vtube_plugin
+	url = git@github.com:achojnicki/sicken-vtube_plugin.git
