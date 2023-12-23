@@ -19,3 +19,21 @@
 [submodule "uwsgi_workers/scarlet-api"]
 	path = uwsgi_workers/scarlet-api
 	url = git@github.com:achojnicki/scarlet-api.git
+[submodule "uwsgi_workers/sicken-api"]
+	path = uwsgi_workers/sicken-api
+	url = git@github.com:achojnicki/sicken-api.git
+[submodule "workers/sicken-socketio_dispatcher"]
+	path = workers/sicken-socketio_dispatcher
+	url = git@github.com:achojnicki/sicken-socketio_dispatcher.git
+[submodule "workers/sicken-worker_t5_chat"]
+	path = workers/sicken-worker_t5_chat
+	url = git@github.com:achojnicki/sicken-worker_t5_chat.git
+[submodule "workers/sicken-worker_t5_speech"]
+	path = workers/sicken-worker_t5_speech
+	url = git@github.com:achojnicki/sicken-worker_t5_speech.git
+[submodule "workers/sicken-speech_recognition"]
+	path = workers/sicken-speech_recognition
+	url = git@github.com:achojnicki/sicken-speech_recognition.git
+[submodule "workers/sicken-speech_synth"]
+	path = workers/sicken-speech_synth
+	url = git@github.com:achojnicki/sicken-speech_synth.git
