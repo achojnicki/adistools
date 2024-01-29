@@ -1,0 +1,9 @@
+
+log:
+    debug: True
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: moma-indexes_fetcher
+    password: password

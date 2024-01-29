@@ -1,0 +1,15 @@
+pattern_recognizer:
+    chunk_size: 10
+
+log:
+    debug: True
+
+redis:
+    host: localhost
+    port: 6379
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: moma-pattern_recognizer
+    password: password

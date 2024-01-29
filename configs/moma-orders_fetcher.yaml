@@ -1,0 +1,12 @@
+gemini:
+    api_key: master-n2utnkm7ReHYP6OBWMpI
+    api_secret: 4VqCX4QSNaGt9JLHX1pEhtQXhEML
+
+log:
+    debug: True
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: moma-orders_fetcher
+    password: password
