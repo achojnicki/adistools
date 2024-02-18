@@ -1,0 +1,10 @@
+server {
+	listen 80;
+	
+	server_name api.moma.local;
+	
+	location / {
+		uwsgi_pass localhost:10005;
+		include uwsgi_params;
+	}
+}

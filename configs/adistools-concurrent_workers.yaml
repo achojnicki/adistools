@@ -1,0 +1,113 @@
+adistools-log_worker:
+  enable: True
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+adistools-socketio_dispatcher:
+  enable: False
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+adistools-syslog_collector_udp:
+  enable: False
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+adistools-dns_server_worker:
+  enable: False
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+moma-indexes_cache_updater:
+  enable: False
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+moma-indexes_fetcher:
+  enable: False
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+moma-orders_cache_updater:
+  enable: False
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+moma-orders_fetcher:
+  enable: false
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+moma-pattern_recognizer:
+  enable: false
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+moma-socketio_dispatcher:
+  enable: false
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+sicken-socketio_dispatcher:
+  enable: True
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+sicken-speech_recognition:
+  enable: false
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+sicken-speech_synth:
+  enable: false
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+sicken-vtube_plugin:
+  enable: false
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+sicken-worker_gpt2_chat:
+  enable: False
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+sicken-worker_stable_diffusion:
+  enable: false
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+sicken-worker_t5_chat:
+  enable: false
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+
+sicken-worker_t5_speech:
+  enable: false
+  workers_count: 1
+  uid: 7676
+  gid: 7676
+  
+sicken-worker_commands_chat:
+  enable: true
+  workers_count: 1
+  uid: 7676
+  gid: 7676

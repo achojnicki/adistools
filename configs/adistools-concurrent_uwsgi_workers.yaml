@@ -1,0 +1,29 @@
+adistools-api:
+  enable: True
+  uid: 7676
+  gid: 7676
+
+adistools-url_shortener:
+  enable: True
+  uid: 7676
+  gid: 7676
+
+adistools-wallfaker:
+  enable: True
+  uid: 7676
+  gid: 7676
+
+moma-api:
+  enable: True
+  uid: 7676
+  gid: 7676
+
+scarlet-api:
+  enable: True
+  uid: 7676
+  gid: 7676
+
+sicken-api:
+  enable: True
+  uid: 7676
+  gid: 7676

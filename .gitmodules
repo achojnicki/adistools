@@ -61,3 +61,9 @@
 [submodule "workers/moma-indexes_fetcher"]
 	path = workers/moma-indexes_fetcher
 	url = git@github.com:achojnicki/moma-indexes_fetcher.git
+[submodule "uwsgi_workers/moma-api"]
+	path = uwsgi_workers/moma-api
+	url = git@github.com:achojnicki/moma-api.git
+[submodule "workers/moma-socketio_dispatcher"]
+	path = workers/moma-socketio_dispatcher
+	url = git@github.com:achojnicki/moma-socketio_dispatcher.git

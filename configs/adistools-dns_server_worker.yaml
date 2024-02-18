@@ -1,0 +1,15 @@
+dns_server:
+    mode: UDP,
+    host: "",
+    port: 53
+        
+mongo:
+    host: localhost
+    port: 27017
+    db: adistools
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: adistools-dns_server_worker
+    password: password

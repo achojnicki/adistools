@@ -2,12 +2,12 @@ log:
     debug: true
     
 socketio:
-    host: "0.0.0.0"
-    port: 10003
+    host: localhost
+    port: 10006
     secret: secret
 
 rabbitmq:
     host: localhost
     port: 5672
-    user: sicken-socketio_dispatcher
+    user: moma-socketio_dispatcher
     password: password

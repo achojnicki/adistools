@@ -1,19 +1,15 @@
 api:
-    results_per_page: 39
-    
-log:
-    debug: True
-    
-mongo:
-    host: localhost
-    port: 27017
-    db: adistools
-
-rabbitmq:
-    host: localhost
-    port: 5672
-    user: adistools-api
-    password: password
-
+  results_per_page: 39
 directories:
-    endpoints_directory: /opt/adistools/uwsgi_workers/adistools-api/endpoints
+  endpoints_directory: /opt/adistools/uwsgi_workers/adistools-api/endpoints
+log:
+  debug: true
+mongo:
+  host: localhost
+  port: 27017
+  db: adistools
+rabbitmq:
+  host: localhost
+  port: 5672
+  user: adistools-api
+  password: password
