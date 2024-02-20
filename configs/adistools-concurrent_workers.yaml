@@ -107,7 +107,7 @@ sicken-worker_t5_speech:
   gid: 7676
   
 sicken-worker_commands_chat:
-  enable: true
+  enable: false
   workers_count: 1
   uid: 7676
   gid: 7676

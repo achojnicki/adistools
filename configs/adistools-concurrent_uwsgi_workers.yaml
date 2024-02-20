@@ -4,26 +4,26 @@ adistools-api:
   gid: 7676
 
 adistools-url_shortener:
-  enable: True
+  enable: false
   uid: 7676
   gid: 7676
 
 adistools-wallfaker:
-  enable: True
+  enable: false
   uid: 7676
   gid: 7676
 
 moma-api:
-  enable: True
+  enable: false
   uid: 7676
   gid: 7676
 
 scarlet-api:
-  enable: True
+  enable: true
   uid: 7676
   gid: 7676
 
 sicken-api:
-  enable: True
+  enable: false
   uid: 7676
   gid: 7676

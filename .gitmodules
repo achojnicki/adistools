@@ -67,3 +67,9 @@
 [submodule "workers/moma-socketio_dispatcher"]
 	path = workers/moma-socketio_dispatcher
 	url = git@github.com:achojnicki/moma-socketio_dispatcher.git
+[submodule "/Users/adrian/Dev/adistools/uwsgi_workers/adistools-img_gen"]
+	path = /Users/adrian/Dev/adistools/uwsgi_workers/adistools-img_gen
+	url = git@github.com:achojnicki/adistools-img_gen.git
+[submodule "uwsgi_workers/adistools-pixel_tracker"]
+	path = uwsgi_workers/adistools-pixel_tracker
+	url = git@github.com:achojnicki/adistools-pixel_tracker.git

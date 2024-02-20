@@ -1,0 +1,13 @@
+log:
+    debug: true
+
+mongo:
+    host: 127.0.0.1
+    port: 27017
+    db: adistools
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: adistools-img_gen
+    password: password

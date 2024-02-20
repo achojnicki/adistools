@@ -1,0 +1,9 @@
+server {
+	listen 80;
+	server_name img_gen.adistools.local;
+	
+	location / {
+		uwsgi_pass localhost:10008;
+		include uwsgi_params;
+	}
+}

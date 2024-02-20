@@ -1,0 +1,10 @@
+server {
+	listen 80;
+	
+	server_name pixel_tracker.adistools.local;
+	
+	location / {
+		uwsgi_pass localhost:10007;
+		include uwsgi_params;
+	}
+}
