@@ -4,7 +4,12 @@ adistools-api:
   gid: 7676
 
 adistools-url_shortener:
-  enable: false
+  enable: true
+  uid: 7676
+  gid: 7676
+
+adistools-pixel_tracker:
+  enable: true
   uid: 7676
   gid: 7676
 
