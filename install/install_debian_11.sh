@@ -15,7 +15,7 @@ cd /opt/adistools
 
 # gnupg for rabbitmq
 apt-get install curl apt-transport-https python3 python3-pip nginx uwsgi -y
-pip3 install flask psutil tabulate colored pymongo pyyaml #pika
+pip3 install flask flask-socketio python-socketio psutil tabulate colored pymongo pyyaml pytorch transformers[pytorch] datasets pika socket
 
 #rabbitmq and erlang keys
 #curl -1sLf "https://keys.openpgp.org/vks/v1/by-fingerprint/0A9AF2115F4687BD29803A206B73A36E6026DFCA" |  gpg --dearmor |  tee /usr/share/keyrings/com.rabbitmq.team.gpg > /dev/null
