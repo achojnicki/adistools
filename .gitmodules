@@ -73,6 +73,3 @@
 [submodule "uwsgi_workers/adistools-img_gen"]
 	path = uwsgi_workers/adistools-img_gen
 	url = git@github.com:achojnicki/adistools-img_gen.git
-[submodule "/workers/sicken-worker_stable_diffusion"]
-	path = /workers/sicken-worker_stable_diffusion
-	url = git@github.com:achojnicki/sicken-worker_stable_diffusion.git
