@@ -1,0 +1,22 @@
+openai:
+    api_key: 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
+    model: tts-1
+    voice: nova
+
+log:
+    debug: true
+
+mongo:
+    host: localhost
+    port: 27017
+    db: yuki
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: yuki-image_generator
+    password: password
+
+directories:
+    media: /opt/adistools/files/yuki/media
+    renders: /opt/adistools/files/yuki/renders

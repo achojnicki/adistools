@@ -1,6 +1,6 @@
 [Unit]
 Description=AdisTools-Concurrent
-After=network.target nss-lookup.target
+After=network.target nss-lookup.target mongod.service redis-server.service
 
 [Service]
 Type=forking

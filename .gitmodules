@@ -76,3 +76,21 @@
 [submodule "workers/sicken-worker_stable_diffusion"]
 	path = workers/sicken-worker_stable_diffusion
 	url = git@github.com:achojnicki/sicken-worker_stable_diffusion.git
+[submodule "modules/yuki"]
+	path = modules/yuki
+	url = git@github.com:achojnicki/yuki-module.git
+[submodule "workers/yuki-video_renderer"]
+	path = workers/yuki-video_renderer
+	url = git@github.com:achojnicki/yuki-video_render.git
+[submodule "workers/yuki-director"]
+	path = workers/yuki-director
+	url = git@github.com:achojnicki/yuki-director.git
+[submodule "workers/yuki-speech_generator"]
+	path = workers/yuki-speech_generator
+	url = git@github.com:achojnicki/yuki-speech_generator.git
+[submodule "workers/yuki-image_generator"]
+	path = workers/yuki-image_generator
+	url = git@github.com:achojnicki/yuki-image_generator.git
+[submodule "workers/yuki-supervisor"]
+	path = workers/yuki-supervisor
+	url = git@github.com:achojnicki/yuki-supervisor.git

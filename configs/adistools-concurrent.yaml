@@ -11,8 +11,8 @@ daemon:
 
 uwsgi:
     uwsgi_executable_path: /opt/homebrew/bin/uwsgi
-    uid: 7676
-    gid: 7676
+    uid: 502
+    gid: 502
 
 tasks:
     interval: 0.1

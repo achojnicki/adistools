@@ -1,0 +1,21 @@
+openai:
+    api_key: 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
+    model: gpt-4-0125-preview
+
+log:
+    debug: true
+
+mongo:
+  host: localhost
+  port: 27017
+  db: yuki
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: yuki-director
+    password: password
+
+directories:
+    media: /opt/adistools/files/yuki/media
+    renders: /opt/adistools/files/yuki/renders

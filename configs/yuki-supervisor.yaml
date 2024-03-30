@@ -1,0 +1,17 @@
+log:
+    debug: true
+
+mongo:
+    host: localhost
+    port: 27017
+    db: yuki
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: yuki-supervisor
+    password: password
+
+directories:
+    media: /opt/adistools/files/yuki/media
+    renders: /opt/adistools/files/yuki/renders

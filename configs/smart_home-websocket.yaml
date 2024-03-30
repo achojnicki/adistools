@@ -1,0 +1,13 @@
+log:
+    debug: true
+
+websocket:
+    host: "0.0.0.0"
+    port: 10009
+    secret: secret
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    user: sicken-socketio_dispatcher
+    password: password
