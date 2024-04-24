@@ -94,3 +94,6 @@
 [submodule "workers/yuki-supervisor"]
 	path = workers/yuki-supervisor
 	url = git@github.com:achojnicki/yuki-supervisor.git
+[submodule "uwsgi_workers/adistools-resp_get"]
+	path = uwsgi_workers/adistools-resp_get
+	url = git@github.com:achojnicki/adistools-resp_get.git
