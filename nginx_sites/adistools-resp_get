@@ -1,0 +1,10 @@
+server {
+	listen 80;
+	
+	server_name resp_get.adistools.local;
+	
+	location / {
+		uwsgi_pass localhost:10010;
+		include uwsgi_params;
+	}
+}
