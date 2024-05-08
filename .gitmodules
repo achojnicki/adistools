@@ -25,24 +25,18 @@
 [submodule "workers/sicken-socketio_dispatcher"]
 	path = workers/sicken-socketio_dispatcher
 	url = git@github.com:achojnicki/sicken-socketio_dispatcher.git
-[submodule "workers/sicken-worker_t5_chat"]
-	path = workers/sicken-worker_t5_chat
-	url = git@github.com:achojnicki/sicken-worker_t5_chat.git
-[submodule "workers/sicken-worker_t5_speech"]
-	path = workers/sicken-worker_t5_speech
-	url = git@github.com:achojnicki/sicken-worker_t5_speech.git
+[submodule "workers/sicken-worker_t5"]
+	path = workers/sicken-worker_t5
+	url = git@github.com:achojnicki/sicken-worker_t5.git
 [submodule "workers/sicken-speech_recognition"]
 	path = workers/sicken-speech_recognition
 	url = git@github.com:achojnicki/sicken-speech_recognition.git
-[submodule "workers/sicken-speech_synth"]
-	path = workers/sicken-speech_synth
-	url = git@github.com:achojnicki/sicken-speech_synth.git
 [submodule "workers/sicken-vtube_plugin"]
 	path = workers/sicken-vtube_plugin
 	url = git@github.com:achojnicki/sicken-vtube_plugin.git
-[submodule "workers/sicken-worker_gpt2_chat"]
-	path = workers/sicken-worker_gpt2_chat
-	url = git@github.com:achojnicki/sicken-worker_gpt2_chat.git
+[submodule "workers/sicken-worker_gpt2"]
+	path = workers/sicken-worker_gpt2
+	url = git@github.com:achojnicki/sicken-worker_gpt2.git
 [submodule "modules/moma"]
 	path = modules/moma
 	url = git@github.com:achojnicki/moma-module.git
