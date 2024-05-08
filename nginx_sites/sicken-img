@@ -1,0 +1,10 @@
+server {
+	listen 80;
+	
+	server_name img.sicken.local;
+	
+	location / {
+		uwsgi_pass localhost:10009;
+		include uwsgi_params;
+	}
+}

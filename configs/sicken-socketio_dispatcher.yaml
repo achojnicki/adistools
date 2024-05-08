@@ -11,3 +11,8 @@ rabbitmq:
     port: 5672
     user: sicken-socketio_dispatcher
     password: password
+
+redis:
+    host: localhost
+    port: 6379
+    db: 0

@@ -1,0 +1,10 @@
+server {
+	listen 80;
+
+	server_name socketio.kuro.local;
+
+	location / {
+		uwsgi_pass localhost:10012;
+		include uwsgi_params;
+	}
+}
