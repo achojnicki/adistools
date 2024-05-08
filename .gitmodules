@@ -28,9 +28,6 @@
 [submodule "workers/sicken-worker_t5"]
 	path = workers/sicken-worker_t5
 	url = git@github.com:achojnicki/sicken-worker_t5.git
-[submodule "workers/sicken-speech_recognition"]
-	path = workers/sicken-speech_recognition
-	url = git@github.com:achojnicki/sicken-speech_recognition.git
 [submodule "workers/sicken-vtube_plugin"]
 	path = workers/sicken-vtube_plugin
 	url = git@github.com:achojnicki/sicken-vtube_plugin.git
