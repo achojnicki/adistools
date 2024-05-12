@@ -85,3 +85,6 @@
 [submodule "uwsgi_workers/adistools-resp_get"]
 	path = uwsgi_workers/adistools-resp_get
 	url = git@github.com:achojnicki/adistools-resp_get.git
+[submodule "uwsgi_workers/portfolio"]
+	path = uwsgi_workers/portfolio
+	url = git@github.com:achojnicki/portfolio.git
