@@ -1,0 +1,10 @@
+server {
+	listen 80;
+	
+	server_name portfolio.local;
+	
+	location / {
+		uwsgi_pass localhost:10014;
+		include uwsgi_params;
+	}
+}
