@@ -44,13 +44,13 @@ echo "1st stage installation of dependecies"
 run "apt-get install curl gnupg apt-transport-https python3 python3-pip nginx redis curl -y"
 
 echo "2nd stage installation of dependecies"
-run "pip3 install --break-system-packages flask flask-socketio python-socketio psutil tabulate colored pymongo pyyaml pika socket redis uwsgi "
+run "pip3 install --break-system-packages flask flask-socketio python-socketio psutil tabulate colored pymongo pyyaml pika redis uwsgi"
 
 echo "Downloading and instaling MongoDB key"
-run "curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg --dearmor"
+run "curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | gpg --dearmor -o /usr/share/keyrings/mongodb-server-8.0.gpg"
 
 echo "Adding MongoDB APT repository"
-run 'echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list'
+run 'echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main" | tee /etc/apt/sources.list.d/mongodb-org-8.0.list'
 
 echo "Updating local APT cache"
 run "apt-get update"
@@ -62,13 +62,13 @@ echo "Enabling MongoDB service"
 run "systemctl enable mongod.service"
 
 echo "Downloading and installing RabbitMQ main signing key"
-run "curl -1sLf 'https://keys.openpgp.org/vks/v1/by-fingerprint/0A9AF2115F4687BD29803A206B73A36E6026DFCA' | sudo gpg --dearmor | sudo tee /usr/share/keyrings/com.rabbitmq.team.gpg"
+run "curl -1sLf 'https://keys.openpgp.org/vks/v1/by-fingerprint/0A9AF2115F4687BD29803A206B73A36E6026DFCA' |gpg --dearmor | tee /usr/share/keyrings/com.rabbitmq.team.gpg"
 
 echo "Downloading and installing RabbitMQ 2nd key"
-run "curl -1sLf https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key | sudo gpg --dearmor | sudo tee /usr/share/keyrings/rabbitmq.E495BB49CC4BBE5B.gpg"
+run "curl -1sLf https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key |gpg --dearmor | sudo tee /usr/share/keyrings/rabbitmq.E495BB49CC4BBE5B.gpg"
 
 echo "Downloading and installing RabbitMQ  3rd key"
-run "curl -1sLf https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key | sudo gpg --dearmor | sudo tee /usr/share/keyrings/rabbitmq.9F4587F226208342.gpg"
+run "curl -1sLf https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key |gpg --dearmor | sudo tee /usr/share/keyrings/rabbitmq.9F4587F226208342.gpg"
 
 echo "Installing Erlang and RabbitmMQ Repositories"
 sudo tee /etc/apt/sources.list.d/rabbitmq.list <<EOF
