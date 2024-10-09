@@ -51,7 +51,7 @@ echo "Downloading and instaling MongoDB key"
 curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | gpg --dearmor -o /usr/share/keyrings/mongodb-server-8.0.gpg
 
 echo "Adding MongoDB APT repository"
-echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main" | tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main" | tee /etc/apt/sources.list.d/mongodb-org-8.0.list >/dev/null
 
 echo "Updating local APT cache"
 run "apt-get update"
@@ -75,7 +75,7 @@ echo "Downloading and installing RabbitMQ  3rd key"
 curl -1sLf https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key |gpg --dearmor | sudo tee /usr/share/keyrings/rabbitmq.9F4587F226208342.gpg> /dev/null
 
 echo "Installing Erlang and RabbitmMQ Repositories"
-sudo tee /etc/apt/sources.list.d/rabbitmq.list <<EOF
+sudo tee /etc/apt/sources.list.d/rabbitmq.list >/dev/null <<EOF
 ## Provides modern Erlang/OTP releases
 ##
 deb [arch=amd64 signed-by=/usr/share/keyrings/rabbitmq.E495BB49CC4BBE5B.gpg] https://ppa1.rabbitmq.com/rabbitmq/rabbitmq-erlang/deb/debian bookworm main
