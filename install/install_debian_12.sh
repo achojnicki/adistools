@@ -35,7 +35,7 @@ run() {
 echo 'Installing adistools...'
 run cd /opt/adistools
 
-echo "Updating $PATH"
+echo "Updating \$PATH"
 export PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
 
 echo "Updating local APT cache"
