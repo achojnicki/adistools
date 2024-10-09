@@ -19,9 +19,10 @@ run() {
 
 	echo $prompt_char $command
 	
-	echo Output: $output
+	
 	if [ $exit_code != 0 ] 
 	then 
+		echo Output: $output
   		echo -e Status: ${red}Failed${nc}
   	else
   		echo -e Status: ${green}Success${nc}
@@ -61,14 +62,17 @@ run "apt-get install -y mongodb-org"
 echo "Enabling MongoDB service"
 run "systemctl enable mongod.service"
 
+echo "Staring MongoDB service"
+run "service mongod.service start"
+
 echo "Downloading and installing RabbitMQ main signing key"
-curl -1sLf 'https://keys.openpgp.org/vks/v1/by-fingerprint/0A9AF2115F4687BD29803A206B73A36E6026DFCA' |gpg --dearmor | tee /usr/share/keyrings/com.rabbitmq.team.gpg
+curl -1sLf 'https://keys.openpgp.org/vks/v1/by-fingerprint/0A9AF2115F4687BD29803A206B73A36E6026DFCA' |gpg --dearmor | tee /usr/share/keyrings/com.rabbitmq.team.gpg >/dev/null
 
 echo "Downloading and installing RabbitMQ 2nd key"
-curl -1sLf https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key |gpg --dearmor | sudo tee /usr/share/keyrings/rabbitmq.E495BB49CC4BBE5B.gpg
+curl -1sLf https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key |gpg --dearmor | sudo tee /usr/share/keyrings/rabbitmq.E495BB49CC4BBE5B.gpg >/dev/null
 
 echo "Downloading and installing RabbitMQ  3rd key"
-curl -1sLf https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key |gpg --dearmor | sudo tee /usr/share/keyrings/rabbitmq.9F4587F226208342.gpg
+curl -1sLf https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key |gpg --dearmor | sudo tee /usr/share/keyrings/rabbitmq.9F4587F226208342.gpg> /dev/null
 
 echo "Installing Erlang and RabbitmMQ Repositories"
 sudo tee /etc/apt/sources.list.d/rabbitmq.list <<EOF
