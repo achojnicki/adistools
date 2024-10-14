@@ -1,5 +1,14 @@
 #!/bin/bash
 
+cat <<"EOF"
+           _ _     _              _     
+  __ _  __| (_)___| |_ ___   ___ | |___ 
+ / _` |/ _` | / __| __/ _ \ / _ \| / __|
+| (_| | (_| | \__ \ || (_) | (_) | \__ \
+ \__,_|\__,_|_|___/\__\___/ \___/|_|___/
+
+EOF
+
 if [ "$EUID" -ne 0 ]
   then 
   	echo "This script must be run as root"
@@ -12,13 +21,10 @@ nc='\033[0m'
 
 run() {
 	prompt_char='#'
-
 	command=$*
+	echo $prompt_char $command
 	output=`$* 2>&1`
 	exit_code=$?
-
-	echo $prompt_char $command
-	
 	
 	if [ $exit_code != 0 ] 
 	then 
@@ -41,10 +47,10 @@ export PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
 echo "Updating local APT cache"
 run "apt-get update"
 
-echo "1st stage installation of dependecies"
+echo "1st stage installation of dependencies"
 run "apt-get install curl gnupg apt-transport-https python3 python3-pip nginx redis curl -y"
 
-echo "2nd stage installation of dependecies"
+echo "2nd stage installation of dependencies"
 run "pip3 install --break-system-packages flask flask-socketio python-socketio psutil tabulate colored pymongo pyyaml pika redis uwsgi"
 
 echo "Downloading and instaling MongoDB key"
